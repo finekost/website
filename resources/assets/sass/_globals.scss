@@ -1,0 +1,33 @@
+.left {
+  float:left;
+}
+
+.right {
+  float:right;
+}
+
+.container{
+  width:800px;
+  margin:0 auto;
+}
+
+.btn {
+  color:white;
+  padding-top: $gridWidth / 3;
+  padding-left: $gridWidth / 2;
+  padding-right: $gridWidth / 2;
+  padding-bottom: $gridWidth / 3;
+  background-color: $colorHighlight;
+}
+
+
+h1 {
+  font-size:72px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: $colorHighlight;
+  margin-bottom:  $gridWidth / 2;
+}
