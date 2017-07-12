@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Fkst mock</title>
-    <link rel="stylesheet" href="css/main.css">
-
-    <style>
-
-    </style>
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css">
 
 </head>
 

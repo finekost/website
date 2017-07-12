@@ -1,0 +1,67 @@
+@import 'reset';
+@import 'fonts';
+
+$color-background: #efefef;
+$color-link: #000;
+$color-button-border: #000;
+
+body {
+  background-color: $color-background;
+  font-family: Montserrat-Regular;
+}
+
+.main {
+  background: $color-background;
+  height: 2000px;
+  margin: 0 auto;
+  padding: 200px 100px 0;
+  position: relative;
+  width: 1024px;
+
+  h2 {
+    font-size: 48px;
+    margin-bottom: 33px;
+    width: 424px;
+  }
+
+  h3 {
+    font-size: 14px;
+    margin-bottom: 33px;
+    width: 351px;
+  }
+
+  a {
+    color: $color-link;
+    text-decoration: none;
+  }
+
+  .top-content {
+    opacity: 0;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.works-button {
+  border-right: 2px solid $color-button-border;
+  display: inline-block;
+  padding-right: 4px;
+}
+
+a {
+  display: inline-block;
+}
+
+.headline,
+.subheadline,
+img,
+.buttons-wrap {
+  opacity: 0;
+}
+
+.bottom-content {
+  bottom: 0;
+  position: absolute;
+}
