@@ -19,6 +19,7 @@
             @include('components.masonry-item', ['case' => 'flaschenkino', 'size' => 'half', 'title' => 'Flaschenkino App'])
             @include('components.masonry-item', ['case' => 'flaschenkino', 'size' => 'full', 'title' => 'Huawei Nova', 'video_path' => 'http://www.finekost.com/wp-content/uploads/2017/02/HUA_nova_loop_header_10sec_02.mp4'])
             @include('components.masonry-item', ['case' => 'flaschenkino', 'size' => 'half', 'title' => 'Flaschenkino App'])
+            @include('components.masonry-item', ['case' => 'flaschenkino', 'size' => 'full', 'title' => 'Flaschenkino App', 'video_path' => asset('img/cases/asphaltgold/video.mp4')])
             @include('components.masonry-item', ['case' => 'flaschenkino', 'size' => 'half', 'title' => 'Flaschenkino App'])
             @include('components.masonry-item', ['case' => 'flaschenkino', 'size' => 'full', 'title' => 'Seat Ar App', 'video_path' => 'http://www.finekost.com/wp-content/uploads/2015/09/exp-noaudio-lowres.mp4'])
             @include('components.masonry-item', ['case' => 'flaschenkino', 'size' => 'half', 'title' => 'Flaschenkino App'])
