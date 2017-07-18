@@ -64,11 +64,20 @@
 
     $('.case-overview-wrap a').on('mouseenter', function(e) {
       let title = $(e.currentTarget).data('title');
+      $('.title-hover-container h2').stop().animate({'opacity': 1});
       $('.title-hover-container h2').html(title);
+
+      $('.case-overview-wrap figure').not($(e.currentTarget).parent()).each(function( index, value ) {
+          $(value).stop().animate({'opacity': 0});
+      })
     })
 
     $('.case-overview-wrap a').on('mouseleave', function(e) {
-      $('.title-hover-container h2').html('');
+      $('.title-hover-container h2').stop().animate({'opacity': 0});
+
+      $('.case-overview-wrap figure').not($(e.currentTarget).parent()).each(function( index, value ) {
+          $(value).stop().animate({'opacity': 1});
+      })
     })
 
         //window.scroll(0, 2000);
