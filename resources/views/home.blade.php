@@ -69,7 +69,7 @@
       $('.title-hover-container h2').html(title);
 
       $('.case-overview-wrap figure').not($(e.currentTarget).parent()).each(function( index, value ) {
-          $(value).stop().animate({'opacity': 0});
+          $(value).stop().animate({'opacity': 0.1});
       })
     })
 
