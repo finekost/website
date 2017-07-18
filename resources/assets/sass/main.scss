@@ -18,9 +18,23 @@ $item-full-height: $item-full-width;
 
 $item-color-background: #ccc;
 
+.left {
+  float:left;
+}
+
+.right {
+  float:right;
+}
+
 body {
   background-color: $color-background;
-  font-family: Montserrat-Regular;
+  font-family: Cardo-Regular;
+  font-size:18px;
+  line-height: 30px;
+}
+
+h1,h2,h3 {
+  font-family: Montserrat-Bold;
 }
 
 .title-hover-container  {
@@ -34,8 +48,9 @@ body {
 
   h2 {
     font-size: 200px;
-    text-transform: uppercase;
-    font-family: Montserrat-Regular;
+    font-family: Cardo-Regular;
+    line-height: 166px;
+    opacity: 0;
   }
 
 }
@@ -159,4 +174,62 @@ img,
 .bottom-content {
   bottom: 0;
   position: absolute;
+
+  h2 {
+    line-height: 50px;
+  }
+}
+
+
+
+video {
+  width:100%;
+}
+
+.content-detail {
+  width:80%;
+  margin: 0 auto;
+  margin-bottom: 6%;
+
+  .case-title {
+    margin-top:6%;
+    margin-bottom:2%;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    h2 {
+      font-size: 24px;
+      display: inline-block;
+    }
+  }
+
+
+  .row {
+    margin-top:4%;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  .col {
+    float:left;
+    margin-right:4%;
+    width:48%;
+
+    &.col-last {
+      margin-right:0%;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-top: 8%;
+      margin-bottom: 3%;
+    }
+  }
 }
