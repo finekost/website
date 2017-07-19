@@ -1,5 +1,5 @@
 <figure class="item item-{{$size}}">
-  <a href="case" data-title="{{$title}}">
+  <a href="{{$case}}" data-title="{{$title}}">
 
     @if(isset($video_path))
       <video width="100%" height="100%" style="object-fit: cover;" autoplay muted loop><source src="{{$video_path}}" type="video/mp4" /></video>
