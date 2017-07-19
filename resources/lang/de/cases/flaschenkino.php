@@ -9,5 +9,5 @@ return [
 
     // Optional Parameters
     'thumb_size'  => 'full',
-    'video'       => 'http://www.finekost.com/wp-content/uploads/2016/04/Flaschenkino.mp4'
+    'video'       => 'http://www.finekost.com/wp-content/uploads/2016/04/Flaschenkino.mp4',
 ];

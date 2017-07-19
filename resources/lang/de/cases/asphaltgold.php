@@ -9,5 +9,5 @@ return [
 
     // Optional Parameters
     'thumb_size'  => 'full',
-    'video'       => asset('img/cases/asphaltgold/video.mp4')
+    'video'       => asset('img/cases/asphaltgold/video.mp4'),
 ];
