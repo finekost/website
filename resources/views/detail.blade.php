@@ -20,12 +20,12 @@
           <div class="col">
             <img width="100%" src="http://www.finekost.com/wp-content/uploads/2016/04/app2.png"></img>
             <h3>{{trans('case.about')}}</h3>
-            <p>{{$case['detail']['about']}}</p>
+            <p>{!!$case['detail']['about']!!}</p>
           </div>
           <div class="col col-last">
             <img width="100%" src="http://www.finekost.com/wp-content/uploads/2016/04/app3.png"></img>
             <h3>{{trans('case.tech')}}</h3>
-            <p>{{$case['detail']['tech']}}</p>
+            <p>{!!$case['detail']['tech']!!}</p>
           </div>
         </div>
       </div>

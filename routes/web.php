@@ -13,6 +13,7 @@
 
 Route::get('/', 'MainController@home');
 Route::get('/{title}', 'MainController@detail');
+Route::get('/portfolio/{title}', 'MainController@detail');
 
 Route::get('/case', function () {
     return view('detail');
