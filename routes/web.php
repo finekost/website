@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/', 'MainController@home');
+Route::get('/{title}', 'MainController@detail');
+
+Route::get('/case', function () {
+    return view('detail');
 });

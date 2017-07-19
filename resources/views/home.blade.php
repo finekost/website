@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <title>Fkst mock</title>
     <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>
+    <div class="title-hover-container">
+      <h2></h2>
+    </div>
 
     <div class="main">
 
         <div class="top-content">
-            SEAT AR - App - 2016 - Für UDG haben wir das neue HUAWEI Telefon in Szene gesetzt. - Die komplette Umsetzung der Microsite sowie ein bisschen technische Beratung. Das Ergebnis steht hier.<br><br>
-            JimBlock - App - 2014 - Sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br><br>
-            HUAWEI NOVA - Microsite - 2016 - Für UDG haben wir das neue HUAWEI Telefon in Szene gesetzt. - Die komplette Umsetzung der Microsite sowie ein bisschen technische Beratung. Das Ergebnis steht hier.<br><br>
-            SEAT AR - App - 2016 - Für UDG haben wir das neue HUAWEI Telefon in Szene gesetzt. - Die komplette Umsetzung der Microsite sowie ein bisschen technische Beratung. Das Ergebnis steht hier.<br><br>
-            JimBlock - App - 2014 - Sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br><br>
-            HUAWEI NOVA - Microsite - 2016 - Für UDG haben wir das neue HUAWEI Telefon in Szene gesetzt. - Die komplette Umsetzung der Microsite sowie ein bisschen technische Beratung. Das Ergebnis steht hier.<br><br>
 
+          <div class="case-overview-wrap">
+            @foreach ($cases as $case)
+              @include('components.masonry-item', $case)
+            @endforeach
+          </div>
         </div>
 
         <div class="bottom-content">
@@ -36,10 +37,41 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
+    <script src="{{ asset('js/blurry.load.js') }}"></script>
 
     <script type="text/javascript">
     $( document ).ready(function() {
-        window.scroll(0, 2000);
+
+
+    $('.case-overview-wrap').masonry({
+      columnWidth: 184,
+      itemSelector: '.item'
+    });
+
+    $('.case-overview-wrap .image-blur').each(function( index, value ) {
+      $(value).blurryLoad();
+    })
+
+    $('.case-overview-wrap a').on('mouseenter', function(e) {
+      let title = $(e.currentTarget).data('title');
+      $('.title-hover-container h2').stop().animate({'opacity': 1});
+      $('.title-hover-container h2').html(title);
+
+      $('.case-overview-wrap figure').not($(e.currentTarget).parent()).each(function( index, value ) {
+          $(value).stop().animate({'opacity': 0.1});
+      })
+    })
+
+    $('.case-overview-wrap a').on('mouseleave', function(e) {
+      $('.title-hover-container h2').stop().animate({'opacity': 0});
+
+      $('.case-overview-wrap figure').not($(e.currentTarget).parent()).each(function( index, value ) {
+          $(value).stop().animate({'opacity': 1});
+      })
+    })
+
+        //window.scroll(0, 2000);
         //$('img').fadeOut();
         //$('.bottom-content').delay(800).fadeIn();
 
