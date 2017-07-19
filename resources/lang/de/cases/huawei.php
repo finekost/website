@@ -9,5 +9,5 @@ return [
 
     // Optional Parameters
     'thumb_size'  => 'full',
-    'video'       => 'http://www.finekost.com/wp-content/uploads/2017/02/HUA_nova_loop_header_10sec_02.mp4'
+    'video'       => 'http://www.finekost.com/wp-content/uploads/2017/02/HUA_nova_loop_header_10sec_02.mp4',
 ];

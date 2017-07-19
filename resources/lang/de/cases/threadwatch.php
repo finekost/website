@@ -5,5 +5,5 @@ return [
     'year'        => '2017',
     'images'      => '3',
     'about'       => 'about',
-    'tech'        => 'tech'
+    'tech'        => 'tech',
 ];
