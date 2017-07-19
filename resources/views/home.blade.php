@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Fkst mock</title>
+    <title>Webdvelopment & Appdevelopment made in Hamburg</title>
     <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css">
 </head>
 
