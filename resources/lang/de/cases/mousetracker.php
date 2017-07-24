@@ -1,9 +1,11 @@
 <?php
 
 return [
-    'title'    => 'Mousetracker',
+    'title'   => 'Mousetracker',
     'year'    => '2011',
     'images'  => '3',
+    'ext'     => '.jpg',
+    'gridstyle'   => [1,2],
     'about'   => 'Was ergibt sich wohl, wenn man einen Tag lang sämtliche Mausbewegungen aufzeichen würde? Zu dem Zweck entstand eine Processing App die alle Bewegungen speichert. Die Auswertung erfolgt in Flash.',
     'tech'    => 'Processing, Flash',
 ];

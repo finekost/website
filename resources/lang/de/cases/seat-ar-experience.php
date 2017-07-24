@@ -4,6 +4,8 @@ return [
     'title'       => 'Seat AR Experience',
     'year'        => '2015',
     'images'      => '6',
+    'ext'         => '.jpg',
+    'gridstyle'   => [1,2,3],
     'about'       => 'Zusammen mit <a href="http://kapacht.de/#agency">kapacht</a> Berlin wurde für SEAT International eine Augmented Reality App entwickelt.',
     'tech'        => 'Die App wurde für iOS und Android realisiert. Für den Android-Part haben wir uns externe Unterstützung von Sandro geholt.',
 

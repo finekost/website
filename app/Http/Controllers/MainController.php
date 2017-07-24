@@ -85,7 +85,11 @@ class MainController extends BaseController
 
     private function createCase($case, $video = null)
     {
-        $caseData = ['case' => $case, 'title' => trans('cases/'.$case.'.title')];
+        $caseData = [ 'case' => $case,
+                      'title' => trans('cases/'.$case.'.title'),
+                      'ext' => trans('cases/'.$case.'.ext'),
+                      'gridstyle' => trans('cases/'.$case.'.gridstyle'),
+                    ];
 
       // use thumb_size when defined
       if (trans('cases/'.$case.'.thumb_size') != 'cases/'.$case.'.thumb_size') {
@@ -99,7 +103,7 @@ class MainController extends BaseController
           $caseData['video_path'] = trans('cases/'.$case.'.video');
       }
 
-        return $caseData;
+      return $caseData;
     }
 
     private function createCaseDetail($year, $images, $about, $tech)
@@ -107,7 +111,8 @@ class MainController extends BaseController
         $caseDetail = ['year' => $year,
                'images' => $images,
                'about' => $about,
-               'tech' => $tech, ];
+               'tech' => $tech,
+             ];
 
         return $caseDetail;
     }
