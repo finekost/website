@@ -5,7 +5,7 @@ return [
     'year'        => '2016',
     'images'      => '6',
     'ext'         => '.png',
-    'gridstyle'   => [2,1,3],
+    'gridstyle'   => [2, 1, 3],
     'about'       => 'Für UDG haben wir das neue HUAWEI Telefon in Szene gesetzt.',
     'tech'        => 'Die komplette Umsetzung der Microsite sowie ein bisschen technische Beratung. Das Ergebnis steht <a href="https://unerwartetmehr.de/">hier</a>.',
 

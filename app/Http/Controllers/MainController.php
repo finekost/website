@@ -85,7 +85,7 @@ class MainController extends BaseController
 
     private function createCase($case, $video = null)
     {
-        $caseData = [ 'case' => $case,
+        $caseData = ['case' => $case,
                       'title' => trans('cases/'.$case.'.title'),
                       'ext' => trans('cases/'.$case.'.ext'),
                       'gridstyle' => trans('cases/'.$case.'.gridstyle'),
@@ -103,7 +103,7 @@ class MainController extends BaseController
           $caseData['video_path'] = trans('cases/'.$case.'.video');
       }
 
-      return $caseData;
+        return $caseData;
     }
 
     private function createCaseDetail($year, $images, $about, $tech)
