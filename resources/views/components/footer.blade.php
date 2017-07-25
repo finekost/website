@@ -4,7 +4,7 @@
         <h3 class="subheadline">{{trans('home.copy')}}</h3>
         <div class="buttons-wrap">
             <a class="works-button" href="javascript:void(0)">{{trans('navi.cases')}}</a>
-            <a class="contact-button" href="javascript:void(0)">{{trans('navi.team')}}</a>
+            <a class="contact-button" href="{!! url('/team'); !!}">{{trans('navi.team')}}</a>
         </div>
     </div>
     <img class="cat-img" src="img/sarah-dorweiler-128578.jpg" style="float: left;width: 57%; height; auto; margin-top: 100px;">
