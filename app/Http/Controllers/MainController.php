@@ -11,6 +11,11 @@ class MainController extends BaseController
         return view('home', ['cases' => $this->getCases()]);
     }
 
+    public function team()
+    {
+        return view('team');
+    }
+
     public function detail($case)
     {
         return view('detail', ['case' => $this->getDetailForCase($case)]);
