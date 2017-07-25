@@ -5,7 +5,7 @@ return [
     'year'        => '2012',
     'images'      => '4',
     'ext'         => '.jpg',
-    'gridstyle'   => [1,1,1,1],    
+    'gridstyle'   => [1, 1, 1, 1],
     'about'       => 'Im Auftrag von Liquid Campaign haben wir das neue BMW Special für den indischen Markt umgesetzt. Gestaltet hat es unser lieber Bürokollege Patrick Decaix',
     'tech'        => 'HTML, CSS, Javascript',
 ];
