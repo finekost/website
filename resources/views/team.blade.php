@@ -196,5 +196,10 @@
           © finekost.com // If you keep following your dreams they're going to file a restraining order
         </div>
       </div>
+
+
+      <script type="text/javascript">
+        localStorage.setItem("lastpage", "team");
+      </script>
     </body>
 </html>

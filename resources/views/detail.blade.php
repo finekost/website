@@ -17,7 +17,7 @@
 
 
       @if(isset($case['video_path']))
-        <video autoplay muted loop><source src="{{$case['video_path']}}" type="video/mp4" /></video>
+        <video width="100%" autoplay muted loop><source src="{{$case['video_path']}}" type="video/mp4" /></video>
       @endif
       <div class="content content-detail">
         <div class="case-title">
@@ -86,15 +86,14 @@
           </div>
         </div>
 
-      </div>
-      <div class="main" style="height:500px;">
-        <div class="bottom-content">
-            <div class="" style="float: left;">
 
-            </div>
-            <img class="cat-img" src="img/sarah-dorweiler-128578.jpg" style="float: left;width: 57%; height; auto; margin-top: 100px;">
-            <div class="clearfix"></div>
-        </div>
+        @include('components.footer', ['showInstant' => true])
+
       </div>
+
+
+      <script type="text/javascript">
+        localStorage.setItem("lastpage", "detail");
+      </script>
     </body>
 </html>
