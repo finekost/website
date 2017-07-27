@@ -41,6 +41,7 @@ $( document ).ready(function() {
       columnWidth: 184,
       isInitLayout: true,
       transitionDuration: 0,
+      fitWidth: true,
   });
 
   $('figure').delay(500).animate({

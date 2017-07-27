@@ -60,7 +60,6 @@ class MainController extends BaseController
         $cases[] = $this->createCase('labelit');
         $cases[] = $this->createCase('hashtag-generator');
         $cases[] = $this->createCase('digital-couture');
-        $cases[] = $this->createCase('bmw-2013');
         $cases[] = $this->createCase('mikado');
         $cases[] = $this->createCase('attag-me');
         $cases[] = $this->createCase('st-michaelis');
@@ -73,7 +72,6 @@ class MainController extends BaseController
         $cases[] = $this->createCase('cinemaxx-app');
         $cases[] = $this->createCase('trojanisches-t-shirt');
         $cases[] = $this->createCase('klexxi-kinderwelt');
-        $cases[] = $this->createCase('cinemaxx-app');
         $cases[] = $this->createCase('mousetracker');
 
         return $cases;
