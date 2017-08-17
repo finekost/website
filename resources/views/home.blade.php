@@ -3,125 +3,62 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">    
     <title>Webdvelopment & Appdevelopment made in Hamburg</title>
+    <script src="{{ asset('js/jquery.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
     <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div class="title-hover-container">
-      <h2></h2>
-    </div>
+      <div class="bg"></div>
+      <video muted autoplay loop></video>
 
-    <div class="main">
+      <div class="case-wrapper">
 
-        <div class="top-content">
-
-          <div class="case-overview-wrap">
-            @foreach ($cases as $case)
-              @include('components.masonry-item', $case)
-            @endforeach
-          </div>
+        <div class="case case-1" data-url="https://unerwartetmehr.de/">
+          <h2>HUAWEI</h2>
+          <h3>Nova Microsite</h3>
+          <div class="line"></div>
         </div>
 
-        @include('components.footer')
-    </div>
+        <div class="case case-2" data-url="https://asphaltgold.de/fittingroom/index.php">
+          <h2>ASPHALTGOLD</h2>
+          <h3>Fittingroom App</h3>
+          <div class="line"></div>
+        </div>
 
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
-    <script src="{{ asset('js/blurry.load.js') }}"></script>
+        <div class="case case-3" data-url="http://www.seat.de">
+          <h2>SEAT</h2>
+          <h3>Augmented reality App</h3>
+          <div class="line"></div>
+        </div>
 
-    <script type="text/javascript">
-if ('scrollRestoration' in history) {
-history.scrollRestoration = 'manual';
-}
-
-$( document ).ready(function() {
-
-  var $grid = $('.case-overview-wrap').masonry({
-      columnWidth: 184,
-      isInitLayout: true,
-      transitionDuration: 0,
-      fitWidth: true,
-  });
-
-  $('figure').delay(500).animate({
-      opacity:1},
-      1000);
-
-  // Scroll Down only on first load
-  var lastPage = localStorage.getItem("lastpage");
-  localStorage.removeItem("lastpage");
-
-  if(lastPage === null) {
-    window.scroll(0, 20000);
-  }
+        <div class="case case-4" data-url="http://www.flaschenkino.org/">
+          <h2>VIVA CON AGUA</h2>
+          <h3>Flaschenkino App</h3>
+          <div class="line"></div>
+        </div>
+      </div>
 
 
+      <div class="contact">
+        <div class="contact-center">
+          <p><a href="https://www.google.de/maps/place/finekost/@53.5502516,9.9995629,17z/data=!3m1!4b1!4m5!3m4!1s0x47b18ee242543b51:0x522f02110a961762!8m2!3d53.5502516!4d10.0017516" target="_blank">finekost<br />
+            Jakobikirchhof 9<br />
+            20095 Hamburg<br /></a>
+            <br />
+            <a href="mailto:alex@finekost.com">alex@finekost.com</a><br />
+            fon: <a href="tel+494038650443">040 386 504 43</a><br />
+            mobil: <a href="tel+491789263669">0178 926 36 69</a><br />
+            <br />
+            UST-ID: 268126828
+          </p>
+        </div>
+      </div>
+      <a class="logo" href="#"><img src="img/finekost.svg" width="100%"></img></a>
 
-
-  fadeInFooter(300);
-
-
-  $('.case-overview-wrap .image-blur').each(function( index, value ) {
-    $(value).blurryLoad();
-  })
-
-  addCaseTitleListeners();
-
-  $('.bottom-content ul.main a.cases').on('click', function(e) {
-
-    $('html, body').animate({
-      scrollTop:0
-    },'slow');
-  })
-});
-
-
-
-function addCaseTitleListeners() {
-  $('.case-overview-wrap a').on('mouseenter', function(e) {
-    let title = $(e.currentTarget).data('title');
-    $('.title-hover-container h2').stop().animate({'opacity': 1});
-    $('.title-hover-container h2').html(title);
-
-    $('.case-overview-wrap figure').not($(e.currentTarget).parent()).each(function( index, value ) {
-        $(value).stop().animate({'opacity': 0.1});
-    })
-  })
-
-
-  $('.case-overview-wrap a').on('mouseleave', function(e) {
-    $('.title-hover-container h2').stop().animate({'opacity': 0});
-
-    $('.case-overview-wrap figure').not($(e.currentTarget).parent()).each(function( index, value ) {
-        $(value).stop().animate({'opacity': 1});
-    })
-  })
-}
-
-
-function fadeInFooter(startDelay) {
-  $('.bottom-content').delay(startDelay + 0).animate({
-      opacity:1},
-      1000);
-
-  $('.bottom-content h2').delay(startDelay + 300).animate({
-      opacity:1},
-      1000);
-
-  $('.bottom-content h3').delay(startDelay + 450).animate({
-      opacity:1},
-      1000);
-
-  $('.bottom-content ul.main').delay(startDelay + 550).animate({
-      opacity:1},
-      1000);
-
-  $('.bottom-content ul.sub').delay(startDelay + 650).animate({
-      opacity:1},
-      1000);
-}
-</script>
 
 </body>
 </html>
