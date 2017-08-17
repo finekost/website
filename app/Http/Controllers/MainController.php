@@ -94,17 +94,17 @@ class MainController extends BaseController
                       'gridstyle' => trans('cases/'.$case.'.gridstyle'),
                     ];
 
-      // use thumb_size when defined
-      if (trans('cases/'.$case.'.thumb_size') != 'cases/'.$case.'.thumb_size') {
-          $caseData['size'] = trans('cases/'.$case.'.thumb_size');
-      } else {
-          $caseData['size'] = 'half';
-      }
+        // use thumb_size when defined
+        if (trans('cases/'.$case.'.thumb_size') != 'cases/'.$case.'.thumb_size') {
+            $caseData['size'] = trans('cases/'.$case.'.thumb_size');
+        } else {
+            $caseData['size'] = 'half';
+        }
 
-      // use video when defined
-      if (trans('cases/'.$case.'.video') != 'cases/'.$case.'.video') {
-          $caseData['video_path'] = trans('cases/'.$case.'.video');
-      }
+        // use video when defined
+        if (trans('cases/'.$case.'.video') != 'cases/'.$case.'.video') {
+            $caseData['video_path'] = trans('cases/'.$case.'.video');
+        }
 
         return $caseData;
     }

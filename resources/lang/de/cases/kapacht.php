@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title'       => 'Kapchat',
+    'title'       => 'Kapacht',
     'year'        => '2015',
     'images'      => '6',
     'ext'         => '.png',
