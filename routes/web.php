@@ -12,10 +12,3 @@
 */
 
 Route::get('/', 'MainController@home');
-Route::get('/team', 'MainController@team');
-Route::get('/{title}', 'MainController@detail');
-Route::get('/portfolio/{title}', 'MainController@detail');
-
-Route::get('/case', function () {
-    return view('detail');
-});
