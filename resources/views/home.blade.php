@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Webdvelopment & Appdevelopment made in Hamburg</title>
     <script src="{{ asset('js/jquery.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
@@ -50,8 +50,8 @@
             20095 Hamburg<br /></a>
             <br />
             <a href="mailto:alex@finekost.com">alex@finekost.com</a><br />
-            fon: <a href="tel+494038650443">040 386 504 43</a><br />
-            mobil: <a href="tel+491789263669">0178 926 36 69</a><br />
+            fon: <a href="tel:+494038650443">040 386 504 43</a><br />
+            mobil: <a href="tel:+491789263669">0178 926 36 69</a><br />
             <br />
             UST-ID: 268126828
           </p>
