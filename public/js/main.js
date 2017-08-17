@@ -32,7 +32,7 @@ $( document ).ready(function() {
   $( ".case-1" ).mouseover(function( event ) {
     changeBG(0);
     changeCasesExcept('.case-1', 0);
-    var url = "http://www.finekost.com/wp-content/uploads/2017/02/HUA_nova_loop_header_10sec_02.mp4";
+    var url = "videos/huawei.mp4";
     alterVideoUrl(url);
     changeVideo(1)
   });
@@ -46,7 +46,7 @@ $( document ).ready(function() {
   $( ".case-2" ).mouseover(function( event ) {
     changeBG(0);
     changeCasesExcept('.case-2', 0);
-    var url = "http://138.197.176.230/img/cases/asphaltgold-fittingroom/video.mp4";
+    var url = "videos/asphaltgold.mp4";
     alterVideoUrl(url);
     changeVideo(1)
   });
@@ -60,7 +60,7 @@ $( document ).ready(function() {
   $( ".case-3" ).mouseover(function( event ) {
     changeBG(0);
     changeCasesExcept('.case-3', 0);
-    var url = "http://www.finekost.com/wp-content/uploads/2015/09/exp-noaudio-lowres.mp4";
+    var url = "videos/seatar.mp4";
     alterVideoUrl(url);
     changeVideo(1)
   });
@@ -74,7 +74,7 @@ $( document ).ready(function() {
   $( ".case-4" ).mouseover(function( event ) {
     changeBG(0);
     changeCasesExcept('.case-4', 0);
-    var url = "http://www.finekost.com/wp-content/uploads/2016/04/Flaschenkino.mp4";
+    var url = "videos/flaschenkino.mp4";
     alterVideoUrl(url);
     changeVideo(1)
   });
