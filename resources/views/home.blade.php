@@ -14,7 +14,7 @@
 
 <body>
   <div class="wrap">
-      <div class="bg"></div>
+      <div class="bg" style="background-image:url('img/{{$bgImage}}')"></div>
       <video muted autoplay loop></video>
 
       <div class="case-wrapper">
