@@ -107,7 +107,7 @@ $( document ).ready(function() {
       openUrl(event);
       return;
     }
-        
+
     changeBG(0);
     changeCasesExcept('.case-4', 0);
     var url = "videos/flaschenkino.mp4";
@@ -151,13 +151,13 @@ $( document ).ready(function() {
     var paralaxFact = 5;
 
     $('.case-wrapper').css({
-      'margin-top': 0 + (offsetY * paralaxFact),
-      'margin-left': 0 + (offsetX * paralaxFact)
+      'margin-top': 0 + parseInt(offsetY * paralaxFact),
+      'margin-left': 0 + parseInt(offsetX * paralaxFact)
     },'100');
 
     $('.bg').css({
-      'margin-left': offsetX,
-      'margin-top': offsetY
+      'margin-left': parseInt(offsetX),
+      'margin-top': parseInt(offsetY)
     });
   });
 });
