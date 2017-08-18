@@ -21,6 +21,19 @@ function changeVideo(opacity) {
   }, 500);
 }
 
+function tryTouchLink(event){
+  if(is_touch_device()) {
+    if ($("video").css("opacity") == 1) {
+      openUrl(event);
+    }
+  }
+}
+
+function openUrl(event) {
+  var url = $(event.currentTarget).data('url');
+  var win = window.open(url, '_blank');
+}
+
 $( document ).ready(function() {
 
   $( "a.logo" ).click(function( event ) {
@@ -29,12 +42,18 @@ $( document ).ready(function() {
 
   var bgOpacity = 0.75;
 
-  $( ".case-1" ).mouseover(function( event ) {
+  $( ".case-1" ).on('mouseenter touchstart', function( event ) {
+    if($.browser.mobile) {
+      openUrl(event);
+      return;
+    }
+
     changeBG(0);
     changeCasesExcept('.case-1', 0);
     var url = "videos/huawei.mp4";
     alterVideoUrl(url);
     changeVideo(1)
+    tryTouchLink(event);
   });
 
   $( ".case-1" ).mouseout(function( event ) {
@@ -43,12 +62,18 @@ $( document ).ready(function() {
     changeVideo(0)
   })
 
-  $( ".case-2" ).mouseover(function( event ) {
+  $( ".case-2" ).on('mouseenter touchstart', function( event ) {
+    if($.browser.mobile) {
+      openUrl(event);
+      return;
+    }
+
     changeBG(0);
     changeCasesExcept('.case-2', 0);
     var url = "videos/asphaltgold.mp4";
     alterVideoUrl(url);
     changeVideo(1)
+    tryTouchLink(event);
   });
 
   $( ".case-2" ).mouseout(function( event ) {
@@ -57,12 +82,18 @@ $( document ).ready(function() {
     changeVideo(0)
   })
 
-  $( ".case-3" ).mouseover(function( event ) {
+  $( ".case-3" ).on('mouseenter touchstart', function( event ) {
+    if($.browser.mobile) {
+      openUrl(event);
+      return;
+    }
+
     changeBG(0);
     changeCasesExcept('.case-3', 0);
     var url = "videos/seatar.mp4";
     alterVideoUrl(url);
     changeVideo(1)
+    tryTouchLink(event);
   });
 
   $( ".case-3" ).mouseout(function( event ) {
@@ -71,12 +102,18 @@ $( document ).ready(function() {
     changeVideo(0)
   })
 
-  $( ".case-4" ).mouseover(function( event ) {
+  $( ".case-4" ).on('mouseenter touchstart', function( event ) {
+    if($.browser.mobile) {
+      openUrl(event);
+      return;
+    }
+        
     changeBG(0);
     changeCasesExcept('.case-4', 0);
     var url = "videos/flaschenkino.mp4";
     alterVideoUrl(url);
     changeVideo(1)
+    tryTouchLink(event);
   });
 
   $( ".case-4" ).mouseout(function( event ) {
@@ -85,14 +122,23 @@ $( document ).ready(function() {
     changeVideo(0)
   })
 
-  $( ".case" ).click(function( event ) {
-    var url = $(event.currentTarget).data('url');
-    var win = window.open(url, '_blank');
-    win.focus();
+  $( ".case" ).on('click', function( event ) {
+      if( is_touch_device()) {
+        return;
+      }
+
+      var url = $(event.currentTarget).data('url');
+      var win = window.open(url, '_blank');
+      win.focus();
   })
 
 
+
+
   $( ".bg" ).mousemove(function( event ) {
+    if(is_touch_device()) {
+      return;
+    }
     var w = $(".bg").width();
     var h = $(".bg").height();
     var x = event.pageX;
@@ -107,7 +153,7 @@ $( document ).ready(function() {
     $('.case-wrapper').css({
       'margin-top': 0 + (offsetY * paralaxFact),
       'margin-left': 0 + (offsetX * paralaxFact)
-    });
+    },'100');
 
     $('.bg').css({
       'margin-left': offsetX,
@@ -115,3 +161,13 @@ $( document ).ready(function() {
     });
   });
 });
+
+
+function is_touch_device() {
+  try {
+    document.createEvent("TouchEvent");
+    return true;
+  } catch (e) {
+    return false;
+  }
+}

@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Webdvelopment & Appdevelopment made in Hamburg</title>
     <script src="{{ asset('js/jquery.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/detectmobilebrowser.js') }}" type="text/javascript"></script>
     <script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
     <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+  <div class="wrap">
       <div class="bg"></div>
       <video muted autoplay loop></video>
 
@@ -58,7 +60,7 @@
         </div>
       </div>
       <a class="logo" href="#"><img src="img/finekost.svg" width="100%"></img></a>
-
+    </div>
 
 </body>
 </html>

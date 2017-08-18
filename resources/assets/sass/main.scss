@@ -18,6 +18,9 @@ $item-full-height: $item-full-width;
 
 $item-color-background: #ccc;
 
+html {
+  overflow: hidden;
+}
 body {
   background-color: black;
   overflow: hidden;
@@ -39,13 +42,20 @@ video {
   pointer-events: none;
 }
 
+.wrap {
+  position: absolute;
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+
 .bg {
   position: absolute;
   top:-5%;
   left:-5%;
   height: 110%;
   width: 110%;
-  background-color: grey;
+  background-color: black;
   background: url('../img/meduana-6917.jpg');
   background-position: center center;
   background-size: cover;
@@ -55,29 +65,27 @@ video {
 
 .case-wrapper {
   position: absolute;
-  top: 33%;
+  top: 25%;
   left:20%;
-  height:30%;
   width:60%;
+  height: 30vmin;
 
   @media screen and (max-width: 1280px) {
-    width:70%;
-    left:15%;
-    height:27%;
+    width:80%;
+    left:10%;
   }
 
   @media screen and (max-width: 900px) {
-    width:80%;
-    left:10%;
-    height:24%;
+    width:90%;
+    left:5%;
   }
 
   @media screen and (max-width: 600px) {
     position: absolute;
     top:3%;
     width:80%;
-    left:10%;
     height:70%;
+    left:10%;
   }
 }
 
@@ -90,7 +98,7 @@ video {
 
   @media screen and (max-width: 600px) {
     position: static;
-    height:15%;
+    height:25%;
     width:100%;
     border-bottom:1px solid white;
 
@@ -113,29 +121,31 @@ video {
     font-family: Montserrat-Bold;
     word-wrap: break-word;
     font-weight: bold;
-    line-height: 50px;
-    font-size: 58px;
+    font-size: 6vmin;
+    line-height: 5vmin;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 
-    @media screen and (max-width: 1280px) {
-      line-height: 42px;
-      font-size: 48px;
-    }
-
-    @media screen and (max-width: 1280px) {
-      line-height: 30px;
-      font-size: 32px;
+    @media screen and (max-width: 600px) {
+      font-size: 10vmin;
+      line-height: 9vmin;
     }
   }
 
   h3 {
     pointer-events: none;
     margin:4px;
+    margin-top:1vmin;
     color:white;
     font-family: Cardo-Regular;
     word-wrap: break-word;
-    font-size: 18px;
+    font-size: 3vmin;
+    line-height: 3.5vmin;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 600px) {
+      font-size: 5vmin;
+      line-height: 6vmin;
+    }
   }
 
   &.case-1 {
@@ -159,6 +169,7 @@ video {
     width:100%;
     height:1px;
     background-color: white;
+    pointer-events: none;
   }
 
   @keyframes  lineToTop {
@@ -187,9 +198,6 @@ video {
   -webkit-transition: all .3s ease-in-out 0s;
   transition: all .3s ease-in-out 0s;
 
-  @media screen and (max-width: 600px) {
-    height:100%;
-  }
 }
 
 .contact.on {
