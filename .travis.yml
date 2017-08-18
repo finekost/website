@@ -5,6 +5,7 @@ php:
   - 7.0
 
 before_script:
+  - npm install -g sass-lint
   - cp .env.travis .env
   - mysql -e 'create database homestead_test;'
   - composer self-update
@@ -13,3 +14,4 @@ before_script:
 
 script:
   - vendor/bin/phpunit
+  - sass-lint -c .sass-lint.yml '**/*.scss' -v -q
