@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
 function svgAniApps() {
   var speed = 1000;
   var ease = mina.easeinout;

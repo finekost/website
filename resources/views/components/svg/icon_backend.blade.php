@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
 function svgAniBackend() {
   var speed = 500;
   var ease = mina.easeinout;
@@ -94,5 +94,4 @@ function svgAniBackend() {
     <rect class="bar-2" fill="#3B3B3B" x="10" y="47" width="0" height="20"></rect>
     <rect class="bar-1" fill="#3B3B3B" x="10" y="18" width="0" height="20"></rect>
   </g>
-</g>
 </svg>

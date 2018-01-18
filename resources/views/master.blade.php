@@ -5,7 +5,7 @@
   <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-  <script type="text/javascript">
+  <script>
   WebFont.load({
     google: {
       families: [ 'Bree+Serif',
