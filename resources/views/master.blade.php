@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
   <title>finekost: Webdevelopment &amp; Appdevelopment aus Hamburg</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
 
   <style>
