@@ -1,0 +1,44 @@
+body {
+  font-family: $fontStandard;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $fontHighlight;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn {
+  color: white;
+  padding-top: $gridWidth / 2;
+  padding-left: $gridWidth / 1;
+  padding-right: $gridWidth / 1;
+  padding-bottom: $gridWidth / 2;
+  background-color: $colorHighlight;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: $colorHighlight;
+  margin-bottom: $gridWidth / 2;
+}

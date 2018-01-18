@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon-Responsive-Web</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-714.000000, -404.000000)">
+            <g id="Icon-Responsive-Web" transform="translate(714.000000, 404.000000)">
+                <rect id="bg" fill="#DADADA" x="0" y="0" width="200" height="200"></rect>
+                <rect id="sidebar" fill="#3B3B3B" x="0" y="0" width="48" height="200"></rect>
+                <rect id="sections" fill="#DADADA" x="0" y="19" width="48" height="10"></rect>
+                <rect id="input_cpy" fill="#FFFFFF" x="58" y="76" width="130" height="107"></rect>
+                <rect id="input_hl" fill="#FFFFFF" x="58" y="39" width="130" height="24"></rect>
+                <rect id="image3" fill="#70C1B3" x="142" y="114" width="30" height="30"></rect>
+                <rect id="image2" fill="#FF1654" x="102" y="114" width="30" height="30"></rect>
+                <rect id="image1" fill="#247BA0" x="62" y="114" width="30" height="30"></rect>
+                <rect id="headline" fill="#3B3B3B" x="62" y="46" width="82" height="10"></rect>
+                <rect id="copy1" fill="#3B3B3B" x="62" y="83" width="120" height="10"></rect>
+                <rect id="copy2" fill="#3B3B3B" x="62" y="99" width="120" height="10"></rect>
+                <rect id="copy3" fill="#3B3B3B" x="62" y="149" width="70" height="10"></rect>
+                <rect id="copy4" fill="#3B3B3B" x="62" y="164" width="70" height="10"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
