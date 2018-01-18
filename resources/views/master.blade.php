@@ -3,11 +3,9 @@
 <head>
   <title>finekost: Webdevelopment &amp; Appdevelopment aus Hamburg</title>
   <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
-  <script src="{{asset('js/webfont.js')}}"></script>
+  <script async src="{{asset('js/webfont.js')}}"></script>
 
-
-
-  <script src="{{asset('js/snap.svg-min.js')}}"></script>
+  <script async src="{{asset('js/snap.svg-min.js')}}"></script>
   <script>
     window.onload = function () {
       svgAniCMS();
@@ -22,7 +20,7 @@
     @yield('content')
   </div>
 
-  <script>
+  <script async>
   WebFont.load({
     google: {
       families: [ 'Bree+Serif',
