@@ -28,22 +28,22 @@
 
   <script async src="{{asset('js/snap.svg-min.js')}}"></script>
 
-  <script async>
-      var WebFontConfig = {
-          google: {
-            families: [ 'Bree+Serif',
-            'Raleway:300,400,700']
-          },
-          timeout: 3000
-      };
-
-      (function(d) {
-          var wf = d.createElement('script'), s = d.scripts[0];;
-          wf.src = '{{asset('js/webfont.js')}}';
-          wf.async = 'true';
-          s.parentNode.insertBefore(wf, s);
-      })(document);
-  </script>
+  <script type="text/javascript">
+  var WebFontConfig = {
+      google: {
+        families: [ 'Bree+Serif',
+        'Raleway:300,400,700']
+      },
+      timeout: 3000
+  };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })(); </script>
 
   <noscript id="deferred-styles">
       <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}"/>
