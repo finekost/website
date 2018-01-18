@@ -7,14 +7,6 @@
   <script async src="{{asset('js/snap.svg-min.js')}}"></script>
   <script>
     window.onload = function () {
-
-      WebFont.load({
-        google: {
-          families: [ 'Bree+Serif',
-          'Raleway:300,400,700']
-        }
-      });
-
       svgAniCMS();
       svgAniResponsive();
       svgAniApps();
@@ -43,6 +35,16 @@
           window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
       if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
       else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+
+    <script async>
+    WebFont.load({
+      google: {
+        families: [ 'Bree+Serif',
+        'Raleway:300,400,700']
+      }
+    });
     </script>
 </body>
 
