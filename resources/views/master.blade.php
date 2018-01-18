@@ -3,8 +3,26 @@
 <head>
   <title>finekost: Webdevelopment &amp; Appdevelopment aus Hamburg</title>
 
-  <script async src="{{asset('js/webfont.js')}}"></script>
   <script async src="{{asset('js/snap.svg-min.js')}}"></script>
+
+  <script>
+      var WebFontConfig = {
+          google: {
+            families: [ 'Bree+Serif',
+            'Raleway:300,400,700']
+          },
+          timeout: 3000
+      };
+
+      (function(d) {
+          var wf = d.createElement('script'), s = d.scripts[0];;
+          wf.src = '{{asset('js/webfont.js')}}';
+          wf.async = 'true';
+          s.parentNode.insertBefore(wf, s);
+      })(document);
+  </script>
+
+
   <script>
     window.onload = function () {
       svgAniCMS();
@@ -15,7 +33,23 @@
   </script>
 
 </head>
+
+<style>
+#hideAll
+ {
+   position: fixed;
+   left: 0px;
+   right: 0px;
+   top: 0px;
+   bottom: 0px;
+   background-color: white;
+   z-index: 99; /* Higher than anything else in the document */
+
+ }
+</style>
+
 <body>
+  <div id="hideAll">&nbsp;</div>
   <div class="container-outer">
     @yield('content')
   </div>
@@ -37,15 +71,6 @@
       else window.addEventListener('load', loadDeferredStyles);
     </script>
 
-
-    <script async>
-    WebFont.load({
-      google: {
-        families: [ 'Bree+Serif',
-        'Raleway:300,400,700']
-      }
-    });
-    </script>
 </body>
 
 
