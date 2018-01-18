@@ -4,7 +4,7 @@
   <title>finekost: Webdevelopment &amp; Appdevelopment aus Hamburg</title>
   <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
   <script type="text/javascript">
   WebFont.load({
     google: {
@@ -15,15 +15,15 @@
   </script>
 
 
-  <script src="{{asset('js/snap.svg-min.js')}}" type="text/javascript"></script>
-<script type="text/javascript" type="text/javascript">
-  window.onload = function () {
-    svgAniCMS();
-    svgAniResponsive();
-    svgAniApps();
-    svgAniBackend();
-  }
-</script>
+  <script src="{{asset('js/snap.svg-min.js')}}"></script>
+  <script>
+    window.onload = function () {
+      svgAniCMS();
+      svgAniResponsive();
+      svgAniApps();
+      svgAniBackend();
+    }
+  </script>
 </head>
 <body>
   <div class="container-outer">
