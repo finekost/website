@@ -2,7 +2,8 @@
 <html lang="de">
 <head>
   <title>finekost: Webdevelopment &amp; Appdevelopment aus Hamburg</title>
-
+  <meta name="viewport" content="width=device-width">
+  
   <script async src="{{asset('js/snap.svg-min.js')}}"></script>
 
   <script>
