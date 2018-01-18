@@ -4,25 +4,27 @@ body {
   line-height: 24px;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font-family: $fontHighlight;
 }
 
 .left {
-  float:left;
+  float: left;
 }
 
 .right {
-  float:right;
+  float: right;
 }
 
-.container{
-  width:80%;
-  margin:0 auto;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .btn {
-  color:white;
+  color: white;
   padding-top: $gridWidth / 2;
   padding-left: $gridWidth / 1;
   padding-right: $gridWidth / 1;
@@ -30,14 +32,13 @@ h1,h2,h3 {
   background-color: $colorHighlight;
 }
 
-
 h1 {
-  font-size:72px;
+  font-size: 72px;
 }
 
 h4 {
   text-transform: uppercase;
   font-size: 11px;
   color: $colorHighlight;
-  margin-bottom:  $gridWidth / 2;
+  margin-bottom: $gridWidth / 2;
 }

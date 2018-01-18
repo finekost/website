@@ -2,6 +2,6 @@
   <div class="container">
     <h1>{{$hl}}</h1>
     <p>{{$copy}}</p>
-    <a class="btn">Anfragen</a>
+    <a class="btn" href="mailto:alex@finekost.com">E-Mail</a>
   </div>
 </div>
