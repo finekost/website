@@ -3,36 +3,6 @@
 <head>
   <title>finekost: Webdevelopment &amp; Appdevelopment aus Hamburg</title>
   <meta name="viewport" content="width=device-width">
-
-  <script async src="{{asset('js/snap.svg-min.js')}}"></script>
-
-  <script async>
-      var WebFontConfig = {
-          google: {
-            families: [ 'Bree+Serif',
-            'Raleway:300,400,700']
-          },
-          timeout: 3000
-      };
-
-      (function(d) {
-          var wf = d.createElement('script'), s = d.scripts[0];;
-          wf.src = '{{asset('js/webfont.js')}}';
-          wf.async = 'true';
-          s.parentNode.insertBefore(wf, s);
-      })(document);
-  </script>
-
-
-  <script async>
-    window.onload = function () {
-      svgAniCMS();
-      svgAniResponsive();
-      svgAniApps();
-      svgAniBackend();
-    }
-  </script>
-
 </head>
 
 <style>
@@ -55,6 +25,26 @@
     @yield('content')
   </div>
 
+
+  <script async src="{{asset('js/snap.svg-min.js')}}"></script>
+
+  <script async>
+      var WebFontConfig = {
+          google: {
+            families: [ 'Bree+Serif',
+            'Raleway:300,400,700']
+          },
+          timeout: 3000
+      };
+
+      (function(d) {
+          var wf = d.createElement('script'), s = d.scripts[0];;
+          wf.src = '{{asset('js/webfont.js')}}';
+          wf.async = 'true';
+          s.parentNode.insertBefore(wf, s);
+      })(document);
+  </script>
+
   <noscript id="deferred-styles">
       <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}"/>
     </noscript>
@@ -72,6 +62,15 @@
       else window.addEventListener('load', loadDeferredStyles);
     </script>
 
+
+    <script async>
+      window.onload = function () {
+        svgAniCMS();
+        svgAniResponsive();
+        svgAniApps();
+        svgAniBackend();
+      }
+    </script>
 </body>
 
 
