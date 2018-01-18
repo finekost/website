@@ -63,7 +63,7 @@ function svgAniApps() {
 }
 </script>
 
-<svg id="gfx-apps" width="100%"  viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg id="gfx-apps" width="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g id="Icons">
     <rect id="bg" fill="#FFFFFF" x="0" y="0" width="200" height="200"></rect>
     <rect id="sidebar" fill="#3B3B3B" x="0" y="51" width="200" height="149"></rect>

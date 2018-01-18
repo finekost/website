@@ -1,10 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="de">
 <head>
   <title>finekost: Webdevelopment &amp; Appdevelopment aus Hamburg</title>
   <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-  <script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
   WebFont.load({
     google: {
       families: [ 'Bree+Serif',
@@ -14,8 +15,8 @@
   </script>
 
 
-  <script src="{{asset('js/snap.svg-min.js')}}"></script>
-<script type="text/javascript">
+  <script src="{{asset('js/snap.svg-min.js')}}" type="text/javascript"></script>
+<script type="text/javascript" type="text/javascript">
   window.onload = function () {
     svgAniCMS();
     svgAniResponsive();

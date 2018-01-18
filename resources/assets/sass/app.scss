@@ -43,8 +43,8 @@ h4 {
 }
 
 .masterheader {
-  $logoWH: 330;
-  $logoClip: -$logoWH * 0.4;
+  $logoWH: 330px;
+  $logoClip: (-$logoWH * 0.4);
 
   background-repeat: no-repeat;
   background-size: contain;
@@ -71,6 +71,7 @@ h4 {
     background-position: right (- $logoClip * 0.4) center;
     padding-top: $gridWidth * 3;
     padding-bottom: $gridWidth * 3;
+    background-image: url(http://localhost:8888/finekost-website/public/images/ci/fk_minilogo.svg);
   }
 
   h1 {
@@ -186,9 +187,13 @@ h4 {
 
       .text {
         width: 70%;
-        margin-right: 00%;
+        margin-right: 0%;
         display: block;
         float: left;
+
+        @media (min-width: 1024px) {
+          width: 60%;
+        }
       }
     }
   }
