@@ -46,6 +46,12 @@
     font-family: "Raleway";
     src: url({{asset('fonts/Raleway/Raleway-Regular.ttf')}});
   }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url({{asset('fonts/Raleway/Raleway-Bold.ttf')}});
+    font-weight: bold;
+  }
   </style>
 
 
