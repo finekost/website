@@ -17,7 +17,7 @@
     <link href="{{asset('css/css-office/site.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('css/css-office/jquery.fancybox.css')}}" rel="stylesheet" type="text/css">
 
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyAnPGcMEm3ppN1y4-PN1chFaXSI1RckPyw"></script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&key=AIzaSyAnPGcMEm3ppN1y4-PN1chFaXSI1RckPyw"></script>
     <script type="text/javascript" src="{{asset('js/js-office/jquery-2.0.0.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/js-office/jquery.fancybox.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/js-office/jquery.lazyload.js')}}"></script>
