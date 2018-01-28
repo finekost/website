@@ -127,53 +127,53 @@
         <div class="row">
 			<div class="col-sm-12">
 			<a class="fancybox" href="{{asset('images/office/IMG_3837.JPG')}}" data-fancybox-group="gallery" title="" >
-			<div class="thmb" style="background: url('{{asset('images/office/IMG_3837.JPG')}}') no-repeat center; background-size:cover;"></div>
+			<div class="thmb" style="background: url('{{asset('images/office/t-IMG_3837.JPG')}}') no-repeat center; background-size:cover;"></div>
 			</a>
             </div>
         </div>
         <div class="row">
 			<div class="col-sm-6">
 			<a class="fancybox" href="{{asset('images/office/IMG_3841.JPG')}}" data-fancybox-group="gallery" title="" >
-			<div class="thmb" style="background: url('{{asset('images/office/IMG_3841.JPG')}}') no-repeat center;background-size:cover;"></div>
+			<div class="thmb" style="background: url('{{asset('images/office/t-IMG_3841.JPG')}}') no-repeat center;background-size:cover;"></div>
 			</a>
 			</div>
 			<div class="col-sm-6">
 			<a class="fancybox" href="{{asset('images/office/IMG_3833.JPG')}}" data-fancybox-group="gallery" title="" >
-			<div class="thmb" style="background: url('{{asset('images/office/IMG_3833.JPG')}}') no-repeat center;background-size:cover;"></div>
+			<div class="thmb" style="background: url('{{asset('images/office/t-IMG_3833.JPG')}}') no-repeat center;background-size:cover;"></div>
 			</a>
 			</div>
     	</div>
         <div class="row">
             <div class="col-sm-4">
                 <a class="fancybox" href="{{asset('images/office/IMG_3826.JPG')}}" data-fancybox-group="gallery" title="" >
-                    <div class="thmb" style="background: url('{{asset('images/office/IMG_3826.JPG')}}') no-repeat center;background-size:cover;"></div>
+                    <div class="thmb" style="background: url('{{asset('images/office/t-IMG_3826.JPG')}}') no-repeat center;background-size:cover;"></div>
                 </a>
             </div>
             <div class="col-md-4">
                 <a class="fancybox" href="{{asset('images/office/IMG_3829.JPG')}}" data-fancybox-group="gallery" title="" >
-                    <div class="thmb" style="background: url('{{asset('images/office/IMG_3829.JPG')}}') no-repeat center;background-size:cover;"></div>
+                    <div class="thmb" style="background: url('{{asset('images/office/t-IMG_3829.JPG')}}') no-repeat center;background-size:cover;"></div>
                 </a>
             </div>
             <div class="col-md-4">
                 <a class="fancybox" href="{{asset('images/office/IMG_3839.JPG')}}" data-fancybox-group="gallery" title="" >
-                    <div class="thmb" style="background: url('{{asset('images/office/IMG_3839.JPG')}}') no-repeat center;background-size:cover;"></div>
+                    <div class="thmb" style="background: url('{{asset('images/office/t-IMG_3839.JPG')}}') no-repeat center;background-size:cover;"></div>
                 </a>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-4">
                 <a class="fancybox" href="{{asset('images/office/IMG_3817.JPG')}}" data-fancybox-group="gallery" title="" >
-                    <div class="thmb" style="background: url('{{asset('images/office/IMG_3817.JPG')}}') no-repeat center;background-size:cover;"></div>
+                    <div class="thmb" style="background: url('{{asset('images/office/t-IMG_3817.JPG')}}') no-repeat center;background-size:cover;"></div>
                 </a>
             </div>
             <div class="col-md-4">
                 <a class="fancybox" href="{{asset('images/office/IMG_3819.JPG')}}" data-fancybox-group="gallery" title="" >
-                    <div class="thmb" style="background: url('{{asset('images/office/IMG_3819.JPG')}}') no-repeat center;background-size:cover;"></div>
+                    <div class="thmb" style="background: url('{{asset('images/office/t-IMG_3819.JPG')}}') no-repeat center;background-size:cover;"></div>
                 </a>
             </div>
             <div class="col-md-4">
                 <a class="fancybox" href="{{asset('images/office/IMG_3820.JPG')}}" data-fancybox-group="gallery" title="" >
-                    <div class="thmb" style="background: url('{{asset('images/office/IMG_3820.JPG')}}') no-repeat center;background-size:cover;"></div>
+                    <div class="thmb" style="background: url('{{asset('images/office/t-IMG_3820.JPG')}}') no-repeat center;background-size:cover;"></div>
                 </a>
             </div>
         </div>
