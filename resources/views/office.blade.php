@@ -76,7 +76,7 @@
     <div class="container documents">
         <div class="row">
             <div class="col-sm-12">
-                <h2>Büroplatz zwischen Mönckebergstraße und Chilehaus</h2>
+                <h2 style="word-wrap: break-word;">Büroplatz zwischen Mönckebergstraße und Chilehaus</h2>
             </div>
             <div class="col-sm-6">
                 <p>Wir sind ein kleines IT-Büro und haben einen Büroplatz zu vermieten. 50 Mbit Internet, Reinigung und Siebträger Kaffemaschine gibt es auch.</p>
