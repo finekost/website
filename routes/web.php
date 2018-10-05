@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/', function () {
-  return view('home');
+    return view('home');
 });
 
 Route::get('/bueroplatz-mieten', function () {
