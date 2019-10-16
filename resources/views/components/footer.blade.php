@@ -2,6 +2,7 @@
   <ul class="left">
     <li class="hl">Finekost</li>
     <li><a class="animated" href="tel:+491789263669">mobil: 0178 926 36 69</a></li>
+    <li><strong>PROJECTS</strong><a class="animated" href="https://wikiwizard.finekost.com">wikiwizard</a></li>
   </ul>
   <!--
   <ul class="right">
